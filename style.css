@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans';
+    color: hsl(227, 10%, 46%);
+}
+
+.container {
+    height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.top-bg {
+    position: absolute;
+    height: 1150px;
+    width: 1150px;
+    background: url('./images/bg-pattern-top.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: -600px;
+    left: -250px;
+}
+
+.bottom-bg {
+    position: absolute;
+    height: 1150px;
+    width: 1150px;
+    background: url('./images/bg-pattern-bottom.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: -600px;
+    right: -250px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    z-index: 2;
+    position: relative;
+}
+
+.card-bg {
+    width: 350px;
+    height: 140px;
+    background: url('./images/bg-pattern-card.svg');
+}
+
+.profile .profile-pic {
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    border-radius: 50%;
+    padding: 5px;
+    background-color: white;
+    top: 94px;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 70px;
+    border-bottom: 1px solid hsla(227, 10%, 46%, 0.3);
+    padding-bottom: 25px;
+}
+
+.profile .name {
+    font-size: 18px;
+    color: hsl(229, 23%, 23%);
+}
+
+.profile .name span {
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.profile .location {
+    margin-top: 10px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.num {
+    font-weight: 700;
+    font-size: 20px;
+    color: hsl(229, 23%, 23%);
+}
+
+.stats > * > .name {
+    font-size: 13px;
+}
